@@ -1,1 +1,86 @@
-/* место для вашего кода */
+.header {
+  display: grid;
+  grid-template-columns: 1.5fr 2fr 1.5fr;
+  align-items: center;
+  margin: 90px 50px 105px;
+  height: 90px;
+}
+
+.header__menu {
+  display: flex;
+  align-items: center;
+}
+
+.header__links-list {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding-right: 50px;
+  list-style: circle;
+}
+
+.header__links-list-item {
+  font-size: 18px;
+  font-weight: 400;
+  list-style: circle;
+  text-underline-offset: 4px;
+}
+
+.header__links-list-item_no-bullit {
+  list-style: none;
+}
+
+.header__link,
+.header__link_active {
+  color: #000;
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.header__link {
+  border-bottom: 1px solid #000;
+}
+
+.header__link_active {
+  border-bottom: none;
+}
+
+.header__logo {
+  display: block;
+  align-self: center;
+  width: 130px;
+  height: 105px;
+}
+
+.header__logo-image {
+  width: 100%;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 240px;
+  color: #000;
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  font-style: inherit;
+  line-height: 1.35;
+}
+
+.header__address {
+  justify-self: end;
+  font-style: inherit;
+}
+
+.mail-address,
+.phone-address {
+  align-self: flex-start;
+  border-bottom: 0.5px solid #000;
+  text-decoration: none;
+}
